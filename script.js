@@ -2,7 +2,6 @@ let btn = document.getElementById('btn');
 let spin = document.getElementById('spinner');
 let errorMsg =  document.getElementById('error-msg');
 let qrImage = document.getElementById('qr-image');
-console.log(qrImage);
 
 const clickButton = () =>{
 
@@ -19,6 +18,7 @@ const clickButton = () =>{
 
     errorMsg.style.display = 'none';
     qrImage.src = ` https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${inputValue}`;
+
     qrImage.style.display = 'block'
 
     
