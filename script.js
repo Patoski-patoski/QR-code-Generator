@@ -8,19 +8,22 @@ const clickButton = () =>{
 
     let inputValue = document.getElementById('url').value;
     
-    if (!inputValue) 
+    if (!inputValue){
     errorMsg.style.display = 'block';
     qrImage.style.display= 'none';
     btn.innerText = 'Generate Code...';
-  
+    }
 
+    else { 
     showSpinner();
+
     errorMsg.style.display = 'none';
     qrImage.src = ` https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${inputValue}`;
     qrImage.style.display = 'block'
 
     
     setInterval(() => stopSpinner() , 222);
+    }
 
 }
 
