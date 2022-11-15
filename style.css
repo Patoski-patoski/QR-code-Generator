@@ -12,6 +12,7 @@ body{
 } 
 
 #card{
+    position: relative;
     background-color: #212529;
     width: 45%;
     height: auto;
