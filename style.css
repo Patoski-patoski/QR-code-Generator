@@ -11,53 +11,54 @@ body{
 
 } 
 
-
 #card{
-    background-color:#1d1b1b;
-    background-color:#212529;
+    background-color: #212529;
+    width: 45%;
+    height: auto;
     color: #fff;
-    border-radius: 1rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 28rem; 
-    min-height: 25rem;
 
 }
- 
+
 #btn{
-    position: relative;
-    display: block;
     display: flex;
     justify-content: center;
-    margin-left: 2.5rem;
+    width: 50%;
+    margin: auto;
 }
 
 #input{
-    outline: none;
-    border: none;
+    width: 50%;
+    margin: auto;
 }
-
 #p{color: grey;}
 
 #qr-div{
     background-color: #212529;
     display: flex;
     flex-direction: column;
-
+    padding: 1rem;
 }
 
 #qr-image{ 
-    margin-top: 1.5rem;
-    background-color: #fff;
+    display: flex;
     align-self: center;
-    width: 60%;
-    height: 13rem;
+    width: 50%;
+    margin: auto;
+    height: auto;
+    border: 1px green solid;
+    padding: 1rem;
     display: none;
+    transition: ease-in 0.3;
 }
 
 .fa-spinner{
-    margin-left: 10rem;
-    /* display: none; */
+    margin-left: 45%;
+    display: inline-block;
+    display: none; 
+}
+
+#error-msg{
+    display: none;
+    font-size: 0.625rem;
+    color: red;
 }

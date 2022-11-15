@@ -12,7 +12,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -54,20 +53,27 @@
 
         <div class="input-group mb-3">
 
-          <input type="text" id="input" class="form-control" placeholder="enter a url or text" aria-label="entered text">
+          <input type="url" id="url" class="form-control" placeholder="enter a url or text" aria-label="entered text"> 
 
         </div>
+        <div id="error-msg"> Please insert text or URL</div>
+
 
         <!-- Add button -->
 
         <div id="div">
 
-          <button type="submit" style="width: 80%;" href="#" id="btn" class="btn btn-outline-secondary mt-5"> Generate Code </button>
+          <button type="submit" 
+          style="width: 100%;" 
+          href="#" id="btn" 
+          class="btn btn-outline-secondary mt-3">
+          Generate Code </button>
+         
 
+          <i id="spinner" 
+          class="fa-solid fa-spinner fa-spin-pulse fa-2x mt-4"></i>
 
-          <i id="spinner" class="fa-solid fa-spinner fa-spin-pulse fa-2x mt-4"></i>
-
-          <div id="qr-div"><span id="qr-image"></span> </div>
+          <div id="qr-div"><img id="qr-image" src="" alt="qr-image"></div>
         </div>
 
       </div>
