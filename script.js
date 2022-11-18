@@ -12,7 +12,7 @@ const clickButton = () =>{
     qrImage.style.display= 'none';
     btn.innerText = 'Generate Code...';
     }
-
+ 
     else { 
     showSpinner();
 
@@ -22,8 +22,15 @@ const clickButton = () =>{
     qrImage.style.display = 'block'
 
     
-    setInterval(() => stopSpinner() , 222);
+    setInterval(() => stopSpinner() , 222); 
     }
+
+    document.getElementById('url').addEventListener('keyup', clear);
+
+    function  clear(){
+        qrImage.style.display = 'none';
+    }
+
 
 }
 
@@ -31,6 +38,9 @@ qrImage.addEventListener('load', () =>{
     btn.innerText = 'Generate Code';
 
 })
+
+
+
 
 
 btn.addEventListener('click', clickButton);
