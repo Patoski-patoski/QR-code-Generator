@@ -1,6 +1,6 @@
 # QR-code-Generator
 
-   Tools used
+Tools used
    CSS3
    JavaScripts
    Bootstrap
